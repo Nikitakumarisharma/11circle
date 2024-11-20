@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Carousel from "./component/crousal";
+import EasySteps from "./component/easyStep";
+import FantasyCricket from "./component/fantacyCricket";
+import FAQSection from "./component/Faq";
+import FAQ from "./component/Faq2";
+import Footer from "./component/footor";
+import StatsSection from "./component/iconsLayout";
+import Navbar from "./component/navbar";
+import TestimonialCarousel from "./component/testimonial";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar />
+    <Carousel />
+    <StatsSection />
+    <EasySteps />
+    <FantasyCricket />
+    <FAQ />
+    <FAQSection />
+    <TestimonialCarousel />
+     <Footer />
+    </>
   );
 }
 
