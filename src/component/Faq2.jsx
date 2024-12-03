@@ -45,7 +45,7 @@ const FAQ = () => {
 
   return (
     <div className="p-6 sm:p-10 lg:p-16 mx-auto max-w-4xl">
-      <div className="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b-2 border-gray-200">
+      <div className="flex space-x-12 justify-center sm:space-x-8 border-b-2 border-gray-200">
         <button
           onClick={() => setActiveTab('cricket')}
           className={`py-2 sm:px-8 md:px-16 font-semibold ${activeTab === 'cricket' ? 'text-blue-800 border-b-2 border-blue-800' : 'text-gray-600'} `}

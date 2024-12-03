@@ -22,7 +22,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-8 flex justify-center space-x-12">
+    <div className="bg-gray-100 p-8 flex justify-center lg:space-x-12">
       {stats.map((stat, index) => (
         <div key={index} className="text-center">
           <div className="border-2 border-gray-300 p-4 rounded-md inline-block">

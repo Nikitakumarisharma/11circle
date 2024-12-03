@@ -4,7 +4,7 @@ import FantasyCricket from "./component/fantacyCricket";
 import FAQSection from "./component/Faq";
 import FAQ from "./component/Faq2";
 import Footer from "./component/footor";
-import StatsSection from "./component/iconsLayout";
+import StatsSection from "./component/userRating";
 import Navbar from "./component/navbar";
 import TestimonialCarousel from "./component/testimonial";
 

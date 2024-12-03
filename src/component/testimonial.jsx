@@ -85,7 +85,7 @@ const testimonials = [
 ];
 
 
-function TestimonialCarousel() {
+function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
 
@@ -153,4 +153,4 @@ function TestimonialCarousel() {
   );
 }
 
-export default TestimonialCarousel;
+export default Projects;

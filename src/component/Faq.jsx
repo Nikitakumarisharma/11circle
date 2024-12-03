@@ -24,18 +24,18 @@ function FAQSection() {
 
   return (
     <div className=" mx-auto mt-10 lg:p-16 p-10 space-y-4">
-      <div className="flex lg:text-[50px] text-[40px] text-blue-800"> Frequently asked question.</div>
+      <div className="flex lg:text-[50px] text-[30px] text-blue-800 font-medium"> Frequently asked question.</div>
       {faqData.map((item, index) => (
         <div key={index} className="border-b border-gray-300">
           <button
             className="w-full flex justify-between items-center py-4 text-left"
             onClick={() => toggleSection(index)}
           >
-            <span className="text-lg font-medium">{item.title}</span>
+            <span className="text-md">{item.title}</span>
             <span className="text-2xl">{openIndex === index ? "-" : "+"}</span>
           </button>
           {openIndex === index && (
-            <p className="px-4 pb-4 text-gray-600">{item.content}</p>
+            <p className="px-4 pb-4 text-gray-600 text-[15px]">{item.content}</p>
           )}
         </div>
       ))}
