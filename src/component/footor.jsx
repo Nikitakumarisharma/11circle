@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-800 text-white lg:py-8 py-4">
+    <footer className="bg-[#F05A5B] text-white lg:py-8 py-4">
       <div className="container mx-auto px-4">
         {/* Footer Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-8  sm:gap-2 md:gap-4">
@@ -10,7 +10,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">About Us</h3>
             <p className="text-sm">
-              My11Circle is your trusted platform for playing fantasy sports, offering an engaging experience for cricket and football fans.
+              EXYE is an innovative online quiz gaming platform that transforms
+              your knowledge into rewards. Compete in exciting contests across
+              diverse topics like history, science, entertainment, and more.
+              With fresh questions added hourly, EXYE ensures a dynamic
+              experience where speed and accuracy lead to victory. Join today
+              and showcase your wisdom!
             </p>
           </div>
 
@@ -44,9 +49,15 @@ const Footer = () => {
           {/* Contact Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="text-sm">Email: support@my11circle.com</p>
-            <p className="text-sm">Phone: +123 456 7890</p>
-            <p className="text-sm">Address: 123 Fantasy Street, Sports City</p>
+            <p className="text-sm">
+              Email:{" "}
+              <a href="mailto:manager@auradevops.com" className=" underline">
+                manager@auradevops.com
+              </a>
+            </p>
+
+            <p className="text-sm">Phone: XXX XX XXX</p>
+            <p className="text-sm">Addres: XXXXXX</p>
           </div>
 
           {/* Social Media Section */}
@@ -68,7 +79,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
-          &copy; 2024 My11Circle. All Rights Reserved.
+          &copy; 2024 EXYE. All Rights Reserved.
         </div>
       </div>
     </footer>

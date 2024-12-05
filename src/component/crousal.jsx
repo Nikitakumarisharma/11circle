@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
+import crousal1 from "../asset/crousal1.png"
+import crousal2 from "../asset/crousal2.png"
+import crousal3 from "../asset/crousal3.png"
 
 const Carousel = () => {
   // Array of cricket-related images
   const slides = [
-    { id: 1, imageUrl: "https://static.tnn.in/thumb/msid-100333951,updatedat-1684422028915,width-1280,height-720,resizemode-75/100333951.jpg" },
-    { id: 2, imageUrl: "https://th.bing.com/th/id/OIP.Ipq9m-7T4rk6FqgKhwX8KQHaEK?rs=1&pid=ImgDetMain" },
-    { id: 3, imageUrl: "https://wikifid.com/wp-content/uploads/2021/01/The-playing-style-of-Virat-Kohli.jpg" },
+    { id: 1, imageUrl: crousal1 },
+    { id: 2, imageUrl: crousal2},
+    { id: 3, imageUrl: crousal3},
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -42,7 +45,7 @@ const Carousel = () => {
 
   return (
     <div
-      className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden"
+      className="relative w-full h-[300px] md:h-[500px] lg:h-[725px] overflow-hidden"
       onMouseEnter={handleInteractionStart}
       onMouseLeave={handleInteractionEnd}
       onTouchStart={handleInteractionStart}
@@ -54,12 +57,16 @@ const Carousel = () => {
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {slides.map((slide) => (
-          <div key={slide.id} className="w-full h-[300px] md:h-[400px] lg:h-[500px] flex-shrink-0">
-            <img src={slide.imageUrl} alt={`Slide ${slide.id}`} className="w-full h-full object-cover" />
+          <div key={slide.id} className="w-full h-full flex-shrink-0">
+            <img
+              src={slide.imageUrl}
+              alt={`Slide ${slide.id}`}
+              className="w-full h-full object-cover"
+            />
           </div>
         ))}
       </div>
-
+  
       {/* Previous and Next Buttons */}
       <button
         onClick={goToPreviousSlide}
@@ -75,6 +82,7 @@ const Carousel = () => {
       </button>
     </div>
   );
+  
 };
 
 export default Carousel;
