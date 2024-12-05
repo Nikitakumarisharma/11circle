@@ -15,10 +15,10 @@ function App() {
     <Carousel />
     <StatsSection />
     <EasySteps />
+    <FAQ />
     <FantasyCricket />
     <FAQSection />
     <TestimonialCarousel />
-    <FAQ />
      <Footer />
     </>
   );
