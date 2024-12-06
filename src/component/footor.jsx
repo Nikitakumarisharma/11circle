@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate(); // React Router navigation hook
+
+  const handleTermsClick = () => {
+    navigate("/terms-and-conditions"); // Navigate to the terms page
+  };
   return (
     <footer className="bg-[#F05A5B] text-white lg:py-8 py-4">
       <div className="container mx-auto px-4">
@@ -24,24 +30,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul>
               <li>
-                <a href="#home" className="text-sm hover:underline">
-                  Home
-                </a>
+              <Link to="/" className="text-sm hover:underline">
+            Home
+          </Link>
               </li>
               <li>
-                <a href="#about" className="text-sm hover:underline">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="text-sm hover:underline">
-                  FAQs
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-sm hover:underline">
-                  Contact
-                </a>
+                {/* Terms and Conditions */}
+                <span
+                  className="text-sm hover:underline cursor-pointer"
+                  onClick={handleTermsClick}
+                >
+                  Terms & Conditions
+                </span>
               </li>
             </ul>
           </div>

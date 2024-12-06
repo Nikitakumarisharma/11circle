@@ -4,7 +4,7 @@ import crousal1 from "../asset/crousal1.png"
 
 function FantasyCricket() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center bg-[#FEE79B] py-10 px-5 md:px-20">
+    <div id="home" className="flex flex-col md:flex-row items-center justify-center bg-[#FEE79B] py-10 px-5 md:px-20">
       <div className="md:w-1/2 text-center md:text-left">
         <h1 className="lg:text-3xl text-2xl md:text-4xl font-bold text-[#F05A5B] mb-6">
           Exye: The Ultimate Online Quiz Gaming App
@@ -29,9 +29,7 @@ function FantasyCricket() {
         <p className="text-gray-700 mb-6">
           Fantasy cricket and football or any fantasy games in general boost your skill and let you win real cash rewards. We offer a safe and secured platform to enjoy online fantasy sports at your leisure. Get started with the game right away and join India's fastest growing online fantasy cricket app and experience the real action and thrill.
         </p> */}
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition">
-          Today's Match Preview
-        </button>
+
       </div>
 
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">

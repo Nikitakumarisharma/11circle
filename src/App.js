@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import TermsAndConditions from "./component/TermAndCondition";
 import Carousel from "./component/crousal";
 import EasySteps from "./component/easyStep";
 import FantasyCricket from "./component/exyeDiscription";
@@ -10,17 +12,39 @@ import TestimonialCarousel from "./component/playerLove";
 
 function App() {
   return (
-    <>
-    <Navbar />
-    <Carousel />
-    <StatsSection />
-    <EasySteps />
-    <FAQ />
-    <FantasyCricket />
-    <FAQSection />
-    <TestimonialCarousel />
-     <Footer />
-    </>
+    <Router>
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/terms-and-conditions" element={
+            <>
+            <TermsAndConditions />
+            </>
+            }>
+              </Route>
+
+
+          {/* Main app content */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Carousel />
+                <StatsSection />
+                <EasySteps />
+                <FAQ />
+                <FantasyCricket />
+                <FAQSection />
+                <TestimonialCarousel />
+              </>
+            }
+          />
+        </Routes>
+
+
+        <Footer />
+      </>
+    </Router>
   );
 }
 

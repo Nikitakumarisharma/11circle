@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../asset/exye_logo_.png";
 
 const alert = () => {
@@ -9,14 +10,16 @@ const Navbar = () => {
     <nav className="bg-[#FEE79B] p-2 lg:p-4 flex flex-wrap justify-between items-center">
       {/* Logo and Text */}
       <div className="flex items-center lg:space-x-2">
-        <img
-          src={logo}
-          alt="logo"
-          className="w-8 h-6 lg:w-12 lg:h-10"
-        />
-        <span className="text-[#F05A5B] text-[12px] sm:text-lg font-bold ">
-          EXYE
-        </span>
+        <Link to="/" className="flex items-center">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-8 h-6 lg:w-12 lg:h-10"
+          />
+          <span className="text-[#F05A5B] text-[12px] sm:text-lg font-bold">
+            EXYE
+          </span>
+        </Link>
       </div>
 
       {/* Center Text */}

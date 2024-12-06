@@ -31,7 +31,7 @@ function FAQSection() {
   ];
 
   return (
-    <div className=" mx-auto lg:p-16 p-10 space-y-4 bg-[#F05A5B]">
+    <div id="Faq" className=" mx-auto lg:p-16 p-10 space-y-4 bg-[#F05A5B]">
       <div className="flex lg:text-[50px] text-[30px] text-[#FEE79B] font-medium"> Frequently asked question.</div>
       {faqData.map((item, index) => (
         <div key={index} className="border-b border-gray-300">
